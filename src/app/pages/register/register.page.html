@@ -1,0 +1,47 @@
+<ion-content >
+  <form class="contain-form">
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Numero de identificacion</ion-label>
+      <ion-input type="number" required></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-item id="open-modal2">
+        <ion-label>Fecha de nacimiento</ion-label>
+        <ion-note class="date-text" slot="end">{{dateExample | date}}</ion-note>
+      </ion-item>
+      <ion-modal trigger="open-modal2" [cssClass]="'bottom-end'">
+        <ng-template>
+          <ion-datetime
+            presentation="date"
+            [(ngModel)]="dateExample"
+            name="date"
+            size="cover"
+            [showDefaultButtons]="true"
+          ></ion-datetime>
+        </ng-template> </ion-modal
+    ></ion-list>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Direccion</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Numero de telefono</ion-label>
+      <ion-input type="number" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col class="contain-button">
+        <ion-button type="submit" color="success" expand="block">Sign Up</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
+

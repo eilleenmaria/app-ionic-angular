@@ -1,0 +1,20 @@
+.contain-form{
+  padding: 3rem 1rem 0 1rem;
+}
+.date-text{
+  font-size: 1.2rem;
+}
+ion-modal {
+  &.bottom-end {
+    align-items: flex-end;
+    --height: auto;
+    .ion-page {
+      position: relative;
+      display: block;
+      contain: content;
+    }
+  }
+}
+.contain-button{
+  padding-top: 1rem;
+}

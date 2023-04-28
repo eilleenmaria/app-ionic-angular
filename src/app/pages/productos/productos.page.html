@@ -1,0 +1,20 @@
+<ion-content >
+  <div class="hero"></div>
+  <ion-toolbar color="dark">
+    <ion-title class="toolbar-title-category">SHOP BY CATEGORY</ion-title>
+  </ion-toolbar>
+  <ion-grid class="content-productos">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6" size-sm="6" size-md="6" size-lg="6" size-xl="6" *ngFor="let p of productos">
+        <ion-card color="secondary" class="card-producto">
+          <img class="card-productos-img" [src]="p.image">
+          <ion-card-content >
+            <ion-card-title class="center">
+              {{ p.title}}
+            </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

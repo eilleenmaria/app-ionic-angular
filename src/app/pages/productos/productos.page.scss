@@ -1,0 +1,52 @@
+.content-productos{
+  background:#f2f2f2;
+}
+.hero {
+  background-image: url('../../../assets/images/mujer-posando-con-bolsos-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+.toolbar-title-category{
+  font-size: 1.5rem;
+}
+
+
+ion-grid {
+  --ion-grid-padding-sm: 20px;
+  --ion-grid-padding-md: 30px;
+  --ion-grid-padding-lg: 40px;
+  --ion-grid-padding-xl: 100px;
+}
+.category-title{
+  background: var( --ion-color-dark-shade);
+  color: var( --ion-color-dark);
+  padding: 0;
+}
+.category-title h2{
+  margin: 0 ;
+}
+
+.card-productos-img{
+  width: 100%;
+  height: 80%;
+}
+.center{
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card-producto{
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-producto{
+    height: 12rem;
+  }
+}
+
+
+

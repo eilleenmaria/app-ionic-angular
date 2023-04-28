@@ -1,0 +1,50 @@
+
+.divider {
+  display: flex;
+
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+  }
+}
+
+.line {
+  align-items: center;
+  margin: 1em -1em;
+  color: #cccccc;
+
+  &:before,
+  &:after {
+    height: 1px;
+    margin: 0 1em;
+  }
+}
+
+.one-line {
+  &:before,
+  &:after {
+     background: #cccccc;
+  }
+}
+
+.auth-form ion-grid
+{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+
+}
+.auth-form ion-row{
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  align-items: center;
+  justify-content: center;
+}
+.already {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
